@@ -1,0 +1,19 @@
+{
+	"name": "AzureDataLakeStorage3",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsgen2192025.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "adls-access-key",
+				"secretVersion": "e5f8b9c6b974466aaaccbf67bc0890a9"
+			}
+		}
+	}
+}
